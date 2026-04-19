@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xplanパートナー｜初期費用0円・完全成果報酬の副業</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#C9A84C;--gold-l:#E5C97A;--gold-d:#8a6e30;--gold-glow:rgba(201,168,76,0.22);
+  --bg:#07070f;--bg2:#0d0d1a;--card:#111120;--card2:#161628;
+  --text:#ede8e0;--muted:#7d7b8e;--border:rgba(201,168,76,0.15);--line:rgba(255,255,255,0.055)
+}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--text);line-height:1.75;font-size:15px;overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:1rem 2.5rem;background:rgba(7,7,15,0.87);backdrop-filter:blur(18px);border-bottom:0.5px solid var(--line)}
+.logo{font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:1.5rem;letter-spacing:.08em;color:var(--gold-l);font-weight:700}
+.nav-cta{font-size:13px;font-weight:700;color:#07070f;background:var(--gold);padding:.55rem 1.4rem;border-radius:40px;text-decoration:none;letter-spacing:.04em;transition:background .2s,transform .15s;box-shadow:0 2px 12px var(--gold-glow)}
+.nav-cta:hover{background:var(--gold-l);transform:translateY(-1px)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:8rem 1.5rem 5rem;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% -5%,rgba(201,168,76,.11) 0%,transparent 65%),radial-gradient(ellipse 45% 65% at 85% 110%,rgba(90,60,220,.07) 0%,transparent 60%)}
+.grid-overlay{position:absolute;inset:0;background-image:linear-gradient(rgba(201,168,76,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(201,168,76,.035) 1px,transparent 1px);background-size:64px 64px}
+.hero-inner{position:relative;z-index:1;max-width:800px}
+.pill{display:inline-block;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:0.5px solid var(--gold-d);padding:.38rem 1.1rem;border-radius:40px;margin-bottom:2rem;background:rgba(201,168,76,.06)}
+h1{font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.15;color:#fff;margin-bottom:1.4rem;letter-spacing:-.03em;font-weight:700}
+h1 em{font-style:normal;color:var(--gold-l)}
+.hero-sub{font-size:1.05rem;color:var(--muted);max-width:560px;margin:0 auto 2.8rem;line-height:1.9}
+.btns{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-g{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold);color:#07070f;font-size:15px;font-weight:700;padding:.95rem 2.3rem;border-radius:50px;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;box-shadow:0 4px 24px var(--gold-glow)}
+.btn-g:hover{background:var(--gold-l);transform:translateY(-2px);box-shadow:0 8px 32px rgba(201,168,76,.42)}
+.btn-o{display:inline-flex;align-items:center;color:var(--muted);font-size:15px;padding:.95rem 2.3rem;border-radius:50px;border:0.5px solid var(--border);text-decoration:none;transition:border-color .2s,color .2s}
+.btn-o:hover{border-color:var(--gold-d);color:var(--gold-l)}
+.stats{display:flex;justify-content:center;gap:3rem;margin-top:4rem;padding-top:2.5rem;border-top:0.5px solid var(--line);flex-wrap:wrap}
+.stat-num{display:block;font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:2.2rem;color:var(--gold-l);line-height:1;font-weight:700;letter-spacing:-.02em}
+.stat-lbl{font-size:11.5px;color:var(--muted);margin-top:.4rem;letter-spacing:.05em}
+
+/* SECTIONS */
+section{padding:6.5rem 1.5rem}
+.con{max-width:1020px;margin:0 auto}
+.sec-tag{font-size:10.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+h2{font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:clamp(2rem,4.5vw,3rem);color:#fff;line-height:1.2;margin-bottom:1rem;font-weight:700}
+.sec-desc{color:var(--muted);font-size:15px;max-width:520px;line-height:1.85}
+.alt-bg{background:var(--bg2)}
+
+/* FEATURE CARDS */
+.f-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:1.2rem;margin-top:3.5rem}
+.f-card{background:var(--card);border:0.5px solid var(--line);border-radius:18px;padding:2rem 1.8rem;transition:border-color .25s,transform .2s;position:relative;overflow:hidden}
+.f-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-d),transparent);opacity:0;transition:opacity .3s}
+.f-card:hover{border-color:var(--border);transform:translateY(-3px)}
+.f-card:hover::after{opacity:1}
+.f-ico{width:46px;height:46px;border-radius:12px;background:rgba(201,168,76,.09);border:0.5px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:21px;margin-bottom:1.2rem}
+.f-title{font-size:15.5px;font-weight:700;color:#fff;margin-bottom:.5rem}
+.f-desc{font-size:13.5px;color:var(--muted);line-height:1.8}
+
+/* REWARD CARDS */
+.r-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin-top:3rem}
+.r-card{background:var(--card2);border:0.5px solid var(--line);border-radius:16px;padding:1.7rem 1.5rem;transition:border-color .2s}
+.r-card:hover{border-color:var(--border)}
+.r-tag{font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:.5rem}
+.r-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:.9rem}
+.r-amount{font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:1.6rem;color:var(--gold-l);margin-bottom:.4rem;font-weight:700;line-height:1.2}
+.r-note{font-size:12px;color:var(--muted)}
+
+/* CATEGORIES */
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));gap:.75rem;margin-top:3rem}
+.cat-btn{display:flex;align-items:center;gap:.8rem;background:var(--card);border:0.5px solid var(--line);border-radius:12px;padding:.95rem 1.2rem;cursor:pointer;transition:border-color .2s,background .2s;font-size:13.5px;color:var(--text);font-family:inherit;text-align:left}
+.cat-btn:hover,.cat-btn.active{border-color:var(--border);background:var(--card2);color:#fff}
+.cat-btn.active{border-color:var(--gold-d)}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--gold);flex-shrink:0}
+
+/* DETAIL PANEL */
+.detail-panel{margin-top:2rem;background:var(--card2);border:0.5px solid var(--border);border-radius:18px;padding:2.5rem;display:none}
+.detail-panel.show{display:block;animation:fadeIn .3s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.detail-head{display:flex;align-items:flex-start;justify-content:space-between;gap:1.5rem;margin-bottom:2rem;flex-wrap:wrap}
+.detail-tag{font-size:10.5px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem}
+.detail-title{font-size:1.25rem;font-weight:700;color:#fff}
+.detail-line-btn{display:inline-flex;align-items:center;gap:.5rem;background:#06C755;color:#fff;font-size:13px;font-weight:700;padding:.65rem 1.4rem;border-radius:40px;text-decoration:none;white-space:nowrap;transition:opacity .2s;box-shadow:0 2px 12px rgba(6,199,85,.3);font-family:inherit}
+.detail-line-btn:hover{opacity:.85}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.8rem}
+.svc{background:rgba(255,255,255,.03);border:0.5px solid var(--line);border-radius:10px;padding:1.2rem}
+.svc-name{font-size:13.5px;font-weight:700;color:#fff;margin-bottom:.5rem}
+.svc-reward{font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:1.3rem;color:var(--gold-l);margin-bottom:.3rem;font-weight:700;line-height:1.2}
+.svc-note{font-size:12px;color:var(--muted);line-height:1.7}
+.svc.coming{opacity:.5}
+.svc-badge{display:inline-block;font-size:10px;font-weight:500;letter-spacing:.1em;background:rgba(201,168,76,.12);border:0.5px solid var(--gold-d);color:var(--gold);padding:2px 8px;border-radius:20px;margin-bottom:.5rem}
+.detail-desc{font-size:14px;color:var(--muted);line-height:1.85;margin-top:1.5rem;padding-top:1.5rem;border-top:0.5px solid var(--line)}
+.merit-list{margin-top:1.2rem;display:flex;flex-direction:column;gap:.4rem}
+.merit-item{font-size:13px;color:var(--muted);display:flex;align-items:baseline;gap:.6rem}
+.merit-item::before{content:'✓';color:var(--gold);font-size:11px;flex-shrink:0}
+
+/* STEPS */
+.steps-wrap{max-width:640px;margin-top:3.5rem;position:relative}
+.steps-wrap::before{content:'';position:absolute;left:23px;top:50px;bottom:50px;width:1px;background:linear-gradient(180deg,var(--gold-d),transparent)}
+.step{display:flex;gap:1.5rem;align-items:flex-start;padding:1.5rem 0}
+.step-n{width:46px;height:46px;flex-shrink:0;border-radius:50%;background:rgba(201,168,76,.1);border:1px solid var(--gold-d);display:flex;align-items:center;justify-content:center;font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:1.15rem;color:var(--gold-l);font-weight:700;position:relative;z-index:1}
+.step-body{padding-top:.55rem}
+.step-title{font-size:15px;font-weight:700;color:#fff;margin-bottom:.3rem}
+.step-desc{font-size:13.5px;color:var(--muted);line-height:1.8}
+
+/* 2TIER */
+.tier-box{margin-top:3.5rem;background:linear-gradient(135deg,rgba(201,168,76,.07),rgba(80,60,200,.05));border:0.5px solid var(--border);border-radius:22px;padding:3rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+@media(max-width:640px){.tier-box{grid-template-columns:1fr;gap:2rem}}
+.tier-text h3{font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:1.6rem;font-weight:700;color:#fff;margin-bottom:.9rem}
+.tier-text p{font-size:14px;color:var(--muted);line-height:1.9}
+.tier-vis{display:flex;flex-direction:column;align-items:center;gap:.4rem}
+.tier-node{background:var(--card2);border:0.5px solid var(--line);border-radius:10px;padding:.65rem 1.4rem;font-size:13px;color:var(--text);text-align:center}
+.tier-node.you{border-color:var(--gold-d);color:var(--gold-l);font-weight:700}
+.tier-arrow{color:var(--gold-d);font-size:15px;line-height:1}
+.tier-badge{display:inline-block;background:rgba(201,168,76,.1);border:0.5px solid var(--gold-d);color:var(--gold);font-size:10.5px;font-weight:500;letter-spacing:.07em;padding:3px 10px;border-radius:40px;margin-top:.5rem}
+.tier-income{font-size:12.5px;color:var(--muted);margin-top:1.2rem;text-align:center;font-style:italic}
+
+/* FAQ */
+.faq-list{margin-top:3rem;display:flex;flex-direction:column;gap:.75rem;max-width:720px}
+.faq{background:var(--card);border:0.5px solid var(--line);border-radius:14px;overflow:hidden;transition:border-color .2s}
+.faq:hover{border-color:var(--border)}
+.faq-q{padding:1.2rem 1.5rem;font-size:14.5px;font-weight:500;color:#fff;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:1rem;user-select:none}
+.faq-ic{color:var(--gold);font-size:19px;line-height:1;transition:transform .2s;flex-shrink:0}
+.faq.open .faq-ic{transform:rotate(45deg)}
+.faq-a{display:none;padding:1rem 1.5rem 1.3rem;font-size:13.5px;color:var(--muted);line-height:1.8;border-top:0.5px solid var(--line)}
+.faq.open .faq-a{display:block}
+
+/* CTA */
+.cta-sec{text-align:center;padding:9rem 1.5rem;position:relative;overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,rgba(201,168,76,.1) 0%,transparent 70%)}
+.cta-inner{position:relative;z-index:1}
+.cta-sec h2{margin-bottom:1.2rem}
+.cta-sec p{color:var(--muted);font-size:15.5px;margin-bottom:2.8rem;line-height:1.85}
+.line-btn{display:inline-flex;align-items:center;gap:.8rem;background:#06C755;color:#fff;font-size:16px;font-weight:700;padding:1.1rem 2.8rem;border-radius:50px;text-decoration:none;transition:opacity .2s,transform .15s;box-shadow:0 4px 24px rgba(6,199,85,.32)}
+.line-btn:hover{opacity:.87;transform:translateY(-2px)}
+.line-ico{width:24px;height:24px;background:rgba(255,255,255,.22);border-radius:6px;display:flex;align-items:center;justify-content:center;font-weight:900;font-style:italic;font-family:serif;font-size:14px}
+.cta-note{margin-top:1.2rem;font-size:13px;color:var(--muted)}
+.cta-note a{color:var(--gold-d);text-decoration:none}
+
+/* FOOTER */
+footer{border-top:0.5px solid var(--line);padding:2.5rem 2rem;text-align:center;font-size:12.5px;color:var(--muted)}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.fu{opacity:0;animation:fadeUp .7s ease forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.22s}.d3{animation-delay:.34s}.d4{animation-delay:.48s}
+[data-r]{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+[data-r].vis{opacity:1;transform:none}
+
+@media(max-width:600px){
+  nav{padding:.9rem 1.2rem}
+  .hero-inner{padding:0 .5rem}
+  .stats{gap:1.5rem}
+  .detail-panel{padding:1.5rem}
+  .tier-box{padding:2rem 1.5rem}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Xplan</div>
+  <a href="https://line.me/ti/p/RcaLvLMD37" class="nav-cta" target="_blank">LINE登録（無料）</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-inner">
+    <div class="pill fu">副業 · 代理店パートナー 募集中</div>
+    <h1 class="fu d1">紹介するだけで、<br><em>収入が生まれる。</em></h1>
+    <p class="hero-sub fu d2">登録料・ノルマ・月額費用・年会費は一切なし。<br>完全成果報酬で、法人も個人も今日から始められる。</p>
+    <div class="btns fu d3">
+      <a href="https://line.me/ti/p/RcaLvLMD37" class="btn-g" target="_blank">無料でLINE登録する →</a>
+      <a href="#categories" class="btn-o">取扱カテゴリを見る</a>
+    </div>
+    <div class="stats fu d4">
+      <div><span class="stat-num">¥0</span><div class="stat-lbl">初期費用</div></div>
+      <div><span class="stat-num">11</span><div class="stat-lbl">取扱カテゴリ</div></div>
+      <div><span class="stat-num">100%</span><div class="stat-lbl">最大報酬率</div></div>
+      <div><span class="stat-num">2tier</span><div class="stat-lbl">永久ストック報酬</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section>
+  <div class="con">
+    <div data-r><p class="sec-tag">なぜ選ばれるのか</p><h2>Xplanパートナーの<br>6つの強み</h2></div>
+    <div class="f-grid">
+      <div class="f-card" data-r><div class="f-ico">💸</div><div class="f-title">登録料・ノルマ・月額費用ゼロ</div><div class="f-desc">登録料・管理料・ノルマ・月額費・年会費は一切かかりません。リスクなく今日から始められます。</div></div>
+      <div class="f-card" data-r><div class="f-ico">💰</div><div class="f-title">無駄を省いた高額報酬</div><div class="f-desc">無駄を省いた経営戦略により、業界でも水準の高い報酬をお約束しています。</div></div>
+      <div class="f-card" data-r><div class="f-ico">🛠</div><div class="f-title">充実したサポート体制</div><div class="f-desc">レスポンスが早くサポート体制が整っているのでお客様に喜ばれています。SNS広告用LPも各事業で用意。</div></div>
+      <div class="f-card" data-r><div class="f-ico">🌐</div><div class="f-title">リアル・ネット両対応</div><div class="f-desc">リアルとネットどちらの集客方法でもOK。あなたのスタイルで紹介活動ができます。</div></div>
+      <div class="f-card" data-r><div class="f-ico">🏢</div><div class="f-title">法人・個人どちらでもOK</div><div class="f-desc">法人の方は新しい事業として、個人の方は副業として始められる柔軟な制度です。</div></div>
+      <div class="f-card" data-r><div class="f-ico">🔄</div><div class="f-title">2ティア永久ストック報酬</div><div class="f-desc">紹介したパートナーの成果からも永久に2%の報酬が入り続ける、業界屈指の仕組みです。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- REWARD HIGHLIGHTS -->
+<section class="alt-bg">
+  <div class="con">
+    <div data-r><p class="sec-tag">報酬ハイライト</p><h2>1件で数万〜数十万円。<br>高単価案件が揃う。</h2><p class="sec-desc">主要カテゴリの報酬例です。詳細は各カテゴリをご確認ください。</p></div>
+    <div class="r-grid">
+      <div class="r-card" data-r><div class="r-tag">不動産</div><div class="r-title">売買（エージェント）</div><div class="r-amount">売買利益の100%</div><div class="r-note">事務手数料10万円を引いた金額が全額報酬に。</div></div>
+      <div class="r-card" data-r><div class="r-tag">不動産</div><div class="r-title">賃貸（紹介のみ）</div><div class="r-amount">最大 家賃1ヶ月分</div><div class="r-note">最低でも家賃の40%が報酬。紹介だけで完結。</div></div>
+      <div class="r-card" data-r><div class="r-tag">人材紹介</div><div class="r-title">転職（紹介のみ）</div><div class="r-amount">紹介手数料の50%</div><div class="r-note">就職先企業により変動。返金規定クリア後に支払い。</div></div>
+      <div class="r-card" data-r><div class="r-tag">コンサル</div><div class="r-title">美容シェアサロンFC</div><div class="r-amount">30万円/件</div><div class="r-note">FCオーナー紹介の一律報酬。</div></div>
+      <div class="r-card" data-r><div class="r-tag">結婚相談所</div><div class="r-title">結婚（コンシェルジュ）</div><div class="r-amount">入会金−1万円</div><div class="r-note">入会金は個別設定可能。月会費は含まず。</div></div>
+      <div class="r-card" data-r><div class="r-tag">コンサル</div><div class="r-title">記帳代行</div><div class="r-amount">売上の10%（毎月）</div><div class="r-note">1仕訳50円〜。毎月入り続けるストック収入。</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories">
+  <div class="con">
+    <div data-r>
+      <p class="sec-tag">取扱カテゴリ</p>
+      <h2>11の事業から<br>自分に合う領域を選ぶ</h2>
+      <p class="sec-desc">カテゴリをタップすると詳細と正確な報酬内容が確認できます。</p>
+    </div>
+    <div class="cat-grid" data-r>
+      <button class="cat-btn" onclick="showDetail('real-estate',this)"><span class="dot"></span>不動産</button>
+      <button class="cat-btn" onclick="showDetail('human',this)"><span class="dot"></span>人材紹介</button>
+      <button class="cat-btn" onclick="showDetail('consulting',this)"><span class="dot"></span>コンサル</button>
+      <button class="cat-btn" onclick="showDetail('food',this)"><span class="dot"></span>飲食店</button>
+      <button class="cat-btn" onclick="showDetail('beauty',this)"><span class="dot"></span>美容</button>
+      <button class="cat-btn" onclick="showDetail('production',this)"><span class="dot"></span>プロダクション</button>
+      <button class="cat-btn" onclick="showDetail('creative',this)"><span class="dot"></span>クリエイティブ</button>
+      <button class="cat-btn" onclick="showDetail('welfare',this)"><span class="dot"></span>福祉</button>
+      <button class="cat-btn" onclick="showDetail('marriage',this)"><span class="dot"></span>結婚相談所</button>
+      <button class="cat-btn" onclick="showDetail('infra',this)"><span class="dot"></span>営業商材</button>
+      <button class="cat-btn" onclick="showDetail('agency',this)"><span class="dot"></span>代理店制度（2ティア）</button>
+    </div>
+
+    <!-- 不動産 -->
+    <div id="detail-real-estate" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">不動産</div><div class="detail-title">不動産パートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">賃貸（A）紹介のみ</div>
+          <div class="svc-reward">最大 家賃1ヶ月分</div>
+          <div class="svc-note">最低でも家賃の40%が報酬。物件によりAD（広告費）で変動。仲介手数料を安くしたい方の紹介でOK。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">賃貸（B）エージェント</div>
+          <div class="svc-reward">手数料+AD－2万円</div>
+          <div class="svc-note">物件探しから鍵渡しまでマネジメント。図面出し〜内見手配サポートの場合は手数料+AD－4万円。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">店舗内装</div>
+          <div class="svc-reward">内装利益の30%</div>
+          <div class="svc-note">現調〜見積〜デザインまでトータルプロデュース。安くデザイン性の高い内装を求める方の紹介。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">売買（A）紹介のみ</div>
+          <div class="svc-reward">仲介手数料の40%</div>
+          <div class="svc-note">物件により両手仲介もあり。購入・売却希望者の紹介だけでOK。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">売買（B）エージェント</div>
+          <div class="svc-reward">売買利益の100%</div>
+          <div class="svc-note">売買利益＝事務手数料10万円を引いた金額。物件探しから引き渡しまで一貫対応。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">注文住宅</div>
+          <div class="svc-reward">総合利益の100%</div>
+          <div class="svc-note">総合利益＝事務手数料10万円を引いた金額。理想の物件を安く建てたい方の紹介。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">仲介手数料が物件によって最大無料</div>
+          <div class="merit-item">内見済み物件の他社見積より安くします</div>
+          <div class="merit-item">全物件クレジットカード分割払い可能</div>
+          <div class="merit-item">未公開物件・ネット掲載物件ほぼ全て紹介可能</div>
+          <div class="merit-item">「おとり物件」かどうかも確認可能</div>
+          <div class="merit-item">審査が通りにくい方も通りやすい物件を案内</div>
+          <div class="merit-item">低金利の銀行ローンも紹介</div>
+          <div class="merit-item">ご自身が引越し・購入する場合も他社より必ず安くご案内</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 人材紹介 -->
+    <div id="detail-human" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">人材紹介</div><div class="detail-title">人材紹介パートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">転職（A）紹介のみ</div>
+          <div class="svc-reward">紹介手数料の50%</div>
+          <div class="svc-note">紹介手数料は就職先企業により変動（年収の10〜50%や一律10〜100万円など）。返金規定クリア後に支払い。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">転職（B）コンサルタント</div>
+          <div class="svc-reward">紹介手数料－10万円</div>
+          <div class="svc-note">紹介手数料が20万円以下の場合は50%が報酬。キャリア相談〜履歴書作成〜面接対策まで担当。別途サポートプランあり。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">企業紹介（RA）</div>
+          <div class="svc-reward">紹介手数料の10%</div>
+          <div class="svc-note">多数の求職者を保有中。人気業界・未経験OK・他社が扱っていない案件の紹介。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">失業保険サポート</div>
+          <div class="svc-reward">詳細はLINEで</div>
+          <div class="svc-note">失業保険に関するサポートを提供。詳細はLINEにてお問い合わせください。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">全国約20万件のお仕事から紹介可能</div>
+          <div class="merit-item">経験豊富な女性キャリアコンサルタントが対応</div>
+          <div class="merit-item">幅広い職種・未公開求人も取扱い</div>
+          <div class="merit-item">履歴書・職務経歴書の書き方を完全サポート</div>
+          <div class="merit-item">面接対策・推薦文の提出で選考通過率アップ</div>
+          <div class="merit-item">ご自身が転職する場合、入社祝金をお渡し</div>
+          <div class="merit-item">全国のパートナーからリファラル紹介も可能</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- コンサル -->
+    <div id="detail-consulting" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">コンサル</div><div class="detail-title">コンサルパートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">補助金コンサル</div>
+          <div class="svc-reward">利益の30%</div>
+          <div class="svc-note">補助金申請〜事業実施までサポート。新規事業展開・店舗内装・ITツール導入など活用例多数。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">美容シェアサロン【FC】</div>
+          <div class="svc-reward">30万円/件</div>
+          <div class="svc-note">ネイルサロン・美容室のシェアサロンFCオーナーの募集。補助金活用・無人運営で利益化可能。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">記帳代行</div>
+          <div class="svc-reward">売上の10%（毎月）</div>
+          <div class="svc-note">1仕訳50円〜。無料財務コンサルも実施。確定申告を安価にしたい方の紹介。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">起業するためのビジネススキルが身につく</div>
+          <div class="merit-item">単価交渉により、他社より高単価を実現</div>
+          <div class="merit-item">コミュニティを通して稼げる環境を構築</div>
+          <div class="merit-item">専門家がお金周りをバックアップ</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 飲食店 -->
+    <div id="detail-food" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">飲食店</div><div class="detail-title">飲食店パートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">けむり【焼き鳥・日本酒専門店】</div>
+          <div class="svc-reward">会計の10%（毎月継続）</div>
+          <div class="svc-note">新宿にある焼き鳥・日本酒専門店。紹介したお客様には10%割引のサービスあり。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">八八【鉄板焼き・ワイン専門店】</div>
+          <div class="svc-reward">会計の10%（毎月継続）</div>
+          <div class="svc-note">渋谷にある鉄板焼き・ワイン専門店。紹介したお客様には10%割引のサービスあり。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">紹介バックは半永久的にもらえます</div>
+          <div class="merit-item">紹介したお客様にも割引でご案内</div>
+          <div class="merit-item">社会貢献活動も行っています</div>
+          <div class="merit-item">イベント貸切料金は他店より安く設定</div>
+          <div class="merit-item">アメニティが多く自由度の高いイベント開催が可能</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 美容 -->
+    <div id="detail-beauty" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">美容</div><div class="detail-title">美容パートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">B3シェアサロン【渋谷】</div>
+          <div class="svc-reward">月額利用料の10%（毎月）</div>
+          <div class="svc-note">ネイルサロン・美容室のシェアサロン。フリーランス向け月額5万円〜、スポット30分300円〜。独立を目指す美容師・ネイリストの紹介。</div>
+        </div>
+        <div class="svc coming">
+          <div class="svc-badge">準備中</div>
+          <div class="svc-name">B3 SALON【髪質改善・カラー専門】</div>
+          <div class="svc-reward">詳細準備中</div>
+          <div class="svc-note">紹介特別価格は通常料金より半額。詳細はLINEにてお問い合わせください。</div>
+        </div>
+        <div class="svc coming">
+          <div class="svc-badge">準備中</div>
+          <div class="svc-name">メンズサロン【脱毛・エステ・ジム】</div>
+          <div class="svc-reward">詳細準備中</div>
+          <div class="svc-note">メンズ専門の脱毛・エステ・ジム複合施設。詳細はLINEにてお問い合わせください。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">紹介特別価格は通常料金より半額で満足のいく効果を実現</div>
+          <div class="merit-item">しっかりとしたストック報酬が作れる</div>
+          <div class="merit-item">シェアサロンとして施術者も安くサポートも充実</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- プロダクション -->
+    <div id="detail-production" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">プロダクション</div><div class="detail-title">プロダクション・キャスト・イベント</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">会員制店舗送客</div>
+          <div class="svc-reward">売上の10%（継続）</div>
+          <div class="svc-note">特別な体験・上質なサービスを求める方向けの会員制店舗への送客。詳細はお問い合わせベース。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">キャスト募集紹介</div>
+          <div class="svc-reward">給与の10%（継続）</div>
+          <div class="svc-note">高収入を目指すキャスト希望者の紹介。採用・説明対応はすべて本部が行います。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">タワマン協賛</div>
+          <div class="svc-reward">直接報酬なし（特典あり）</div>
+          <div class="svc-note">都内タワーマンションのパーティールームを実質無料で貸出。ソフトドリンク・お酒・備品も無料提供。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">会員制店舗は他では扱えない唯一無二の高単価案件</div>
+          <div class="merit-item">キャスト・送客ともにストック型で継続収入に</div>
+          <div class="merit-item">都内タワマンの利用が可能</div>
+          <div class="merit-item">完全紹介型の特別ルートにつき営業スキル不要</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- クリエイティブ -->
+    <div id="detail-creative" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">クリエイティブ</div><div class="detail-title">クリエイティブ・デザイン・SNS運用</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">デザイン制作</div>
+          <div class="svc-reward">利益の30%（目安）</div>
+          <div class="svc-note">ロゴ・LP・バナー・名刺・動画編集・AIを活用したデザイン・オリジナルTシャツ等。デザインを依頼したい法人・個人の紹介。</div>
+        </div>
+        <div class="svc coming">
+          <div class="svc-badge">準備中</div>
+          <div class="svc-name">SNS運用代行</div>
+          <div class="svc-reward">詳細準備中</div>
+          <div class="svc-note">Instagram・X（旧Twitter）等の運用代行。マーケティングから投稿代行まで対応予定。</div>
+        </div>
+        <div class="svc coming">
+          <div class="svc-badge">準備中</div>
+          <div class="svc-name">AI×デザインスクール</div>
+          <div class="svc-reward">詳細準備中</div>
+          <div class="svc-note">AIやITスキルを学びたい方向けのスクール紹介モデル。最先端カリキュラムのリリース予定。</div>
+        </div>
+      </div>
+      <div class="detail-desc">SNS・デザインが好きな方、「つなぐ力」がある方に最適。資料・ヒアリングシートが揃っているため、スキルなしでも紹介するだけでOKです。</div>
+    </div>
+
+    <!-- 福祉 -->
+    <div id="detail-welfare" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">福祉</div><div class="detail-title">福祉・保護猫・就労支援パートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">にゃんちゅ〜る【保護猫カフェ】</div>
+          <div class="svc-reward">報酬なし（社会貢献型）</div>
+          <div class="svc-note">新宿の保護猫カフェ。売上はすべて猫の保護活動支援金として使用。保護猫に興味がある方の紹介。</div>
+        </div>
+        <div class="svc coming">
+          <div class="svc-badge">準備中</div>
+          <div class="svc-name">就労移行支援</div>
+          <div class="svc-reward">詳細準備中</div>
+          <div class="svc-note">AI・デザイン・SNSマーケティングなどのカリキュラム予定。ストック報酬も用意。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">社会貢献を行っている</div>
+          <div class="merit-item">就労支援はAI・デザイン・SNSマーケティングなどのカリキュラム予定</div>
+          <div class="merit-item">就労支援にはストック報酬を用意</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 結婚相談所 -->
+    <div id="detail-marriage" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">結婚相談所</div><div class="detail-title">結婚相談所パートナー</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">結婚（A）紹介のみ</div>
+          <div class="svc-reward">入会金の30%</div>
+          <div class="svc-note">月会費1万円は報酬に含まれません。本気で結婚相手を見つけたい方・出会いがない方・恋愛の仕方がわからない方の紹介。</div>
+        </div>
+        <div class="svc">
+          <div class="svc-name">結婚（B）コンシェルジュ</div>
+          <div class="svc-reward">入会金－1万円</div>
+          <div class="svc-note">入会金は個別設定可能。月会費1万円は含まれず。入会案内・恋愛コンサル・お見合い提案・結婚サポートまで担当。別途サポートプランあり。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">プランが選べるのでお客様に合ったサポート提供が可能</div>
+          <div class="merit-item">全国10万人のお見合い相手にアプローチ可能</div>
+          <div class="merit-item">経験豊富な女性の結婚コンシェルジュが対応</div>
+          <div class="merit-item">LINEや会話の内容など徹底的にアドバイス</div>
+          <div class="merit-item">髪型・服装など容姿を整えるお手伝いもあり</div>
+          <div class="merit-item">PR写真・動画作成もサポート</div>
+          <div class="merit-item">ご自身が入会する場合、特別割引あり</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 営業商材 -->
+    <div id="detail-infra" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">営業商材</div><div class="detail-title">営業商材パートナー（ライフライン）</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">ライフライン各種</div>
+          <div class="svc-reward">詳細はお問い合わせ</div>
+          <div class="svc-note">光回線・電気・ガス・水など生活インフラ系の営業商材。詳細はLINEにてご案内いたします。</div>
+        </div>
+      </div>
+      <div class="detail-desc">日常インフラのため提案しやすく成約率も高い。「電気代を下げたい」「ネットを安くしたい」という身近な悩みをビジネスに変えられるカテゴリです。詳細はLINEにてお気軽にご相談ください。</div>
+    </div>
+
+    <!-- 代理店制度 -->
+    <div id="detail-agency" class="detail-panel">
+      <div class="detail-head"><div><div class="detail-tag">代理店制度</div><div class="detail-title">2ティア・パートナー制度</div></div><a href="https://line.me/ti/p/RcaLvLMD37" class="detail-line-btn" target="_blank">LINEで相談する</a></div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="svc-name">パートナー制度（2ティア）</div>
+          <div class="svc-reward">パートナー報酬の2%（永久）</div>
+          <div class="svc-note">紹介したパートナーがお客様の契約を獲得したら、そのパートナー報酬の2%が永久ストック報酬として入り続けます。紹介された方の報酬は平等。弊社の利益から払い出し。</div>
+        </div>
+      </div>
+      <div class="detail-desc">
+        <div class="merit-list">
+          <div class="merit-item">ご自身のチームや組織を作れる</div>
+          <div class="merit-item">紹介するだけで報酬が入るアフィリエイト方式</div>
+          <div class="merit-item">各代理店制度を使い分けることも可能</div>
+          <div class="merit-item">アライアンス（連携）登録も受け付け</div>
+        </div>
+        <div style="margin-top:1.2rem;font-size:13px;color:var(--muted)">人脈が広い方・営業をしている方・副業や人材紹介に興味を持ちそうな方をパートナーとしてご紹介ください。紹介報酬2%は弊社の利益から払い出すので、紹介された方が不利になることはありません。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="alt-bg">
+  <div class="con">
+    <div data-r><p class="sec-tag">パートナー登録の流れ</p><h2>4ステップで<br>スタートできる。</h2></div>
+    <div class="steps-wrap">
+      <div class="step" data-r>
+        <div class="step-n">1</div>
+        <div class="step-body"><div class="step-title">ご紹介</div><div class="step-desc">基本、既存パートナーからのご紹介のみ受け付けています。LINEで「fudo39」を検索し、「副業希望」とメッセージを送るだけ。</div></div>
+      </div>
+      <div class="step" data-r>
+        <div class="step-n">2</div>
+        <div class="step-body"><div class="step-title">事業説明</div><div class="step-desc">対面・Zoom・電話でのご説明をさせていただきます。あなたの人脈や得意領域に合ったカテゴリを一緒に選びます。</div></div>
+      </div>
+      <div class="step" data-r>
+        <div class="step-n">3</div>
+        <div class="step-body"><div class="step-title">ご登録</div><div class="step-desc">パートナー規約にご同意の上、パートナー登録を行います。登録料・月額費用は一切かかりません。</div></div>
+      </div>
+      <div class="step" data-r>
+        <div class="step-n">4</div>
+        <div class="step-body"><div class="step-title">事業展開</div><div class="step-desc">スムーズにご活躍できるよう、多方面からサポートいたします。SNS広告用LPも各事業で用意しています。</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2TIER -->
+<section>
+  <div class="con">
+    <div data-r><p class="sec-tag">2ティア制度</p><h2>紹介の連鎖が、<br>永久の収入になる。</h2></div>
+    <div class="tier-box" data-r>
+      <div class="tier-text">
+        <h3>「紹介の紹介」にも<br>報酬が発生する</h3>
+        <p>パートナーとして紹介した方がお客様の契約を獲得したら、そのパートナー報酬の<strong style="color:var(--gold-l)">2%が永久ストック報酬</strong>として入り続けます。</p>
+        <p style="margin-top:1rem">紹介報酬2%は弊社の利益から払い出すため、紹介された方が不利になることはなく、報酬は平等に設計されています。</p>
+        <p style="margin-top:1rem">紹介人数が増えるほど、活動しなくても収入が積み上がっていく仕組みです。</p>
+      </div>
+      <div class="tier-vis">
+        <div class="tier-node you">あなた（パートナー）</div>
+        <div class="tier-arrow">↓ パートナーとして紹介</div>
+        <div class="tier-node">Aさん（あなたが紹介）</div>
+        <div class="tier-badge">ここまでが通常の副業</div>
+        <div class="tier-arrow" style="margin-top:.5rem">↓ Aさんが契約獲得</div>
+        <div class="tier-node">お客様（成約）</div>
+        <div class="tier-badge">あなたにも2%が永久に発生 ✓</div>
+        <div class="tier-income">Aさんの報酬30万円 → あなたに毎月6,000円<br>弊社利益から支払い。Aさんの報酬は変わらず。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt-bg">
+  <div class="con">
+    <div data-r><p class="sec-tag">よくある質問</p><h2>はじめての方へ</h2></div>
+    <div class="faq-list" data-r>
+      <div class="faq">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">登録料・月額費用・年会費はかかりますか？<span class="faq-ic">+</span></div>
+        <div class="faq-a">一切かかりません。登録料・管理料・ノルマ・月額費・年会費はゼロです。完全成果報酬のため、収入が発生するまでコストはかかりません。</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">パートナー登録はどのようにすればいいですか？<span class="faq-ic">+</span></div>
+        <div class="faq-a">基本、既存パートナーからのご紹介のみ受け付けています。LINEで「fudo39」を検索し、「副業希望」とメッセージを送っていただければ、担当者からご案内いたします。</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">業界の知識や営業経験がなくても大丈夫ですか？<span class="faq-ic">+</span></div>
+        <div class="faq-a">問題ありません。提案・説明・交渉はすべて本部スタッフが対応します。あなたは「興味ありそうな人をつなぐ」だけ。各事業のSNS広告用LPも用意されています。</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">複数のカテゴリを同時に扱えますか？<span class="faq-ic">+</span></div>
+        <div class="faq-a">はい。各代理店制度を使い分けることも可能です。不動産と飲食を同時に紹介したり、人脈に合わせて複数の領域で活動することができます。</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">法人として参加できますか？<span class="faq-ic">+</span></div>
+        <div class="faq-a">はい。法人の方は新しい事業として、個人の方は副業として始められます。アライアンス（連携）登録も受け付けています。</div>
+      </div>
+      <div class="faq">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">2ティアの報酬は自動で適用されますか？<span class="faq-ic">+</span></div>
+        <div class="faq-a">はい。パートナー登録後、LINE経由で紹介コードが紐づいていれば自動追跡されます。紹介報酬2%は弊社の利益から払い出すため、紹介された方の報酬には影響ありません。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-sec">
+  <div class="cta-bg"></div>
+  <div class="cta-inner">
+    <p class="sec-tag" style="text-align:center">今すぐ始める</p>
+    <h2>新しい働き方を、<br>一緒に創造しましょう。</h2>
+    <p>「副業のやり方が知りたい」「自分に合ったカテゴリを知りたい」<br>どんな質問でも、担当者が丁寧にお答えします。</p>
+    <a href="https://line.me/ti/p/RcaLvLMD37" class="line-btn" target="_blank">
+      <div class="line-ico">L</div>LINEで無料相談する
+    </a>
+    <div class="cta-note">LINE ID：<a href="https://line.me/ti/p/RcaLvLMD37" target="_blank">fudo39</a>で検索 ／ 「副業希望」と送るだけ</div>
+  </div>
+</section>
+
+<footer>
+  <div style="margin-bottom:.5rem"><span style="font-family:'DM Sans','Noto Sans JP',sans-serif;font-size:1.1rem;color:var(--gold-l)">Xplan</span></div>
+  © 2024 Xplan Partner. All rights reserved.
+</footer>
+
+<script>
+const panels=document.querySelectorAll('.detail-panel');
+const btns=document.querySelectorAll('.cat-btn');
+function showDetail(id,btn){
+  const t=document.getElementById('detail-'+id);
+  const isOpen=t.classList.contains('show');
+  panels.forEach(p=>p.classList.remove('show'));
+  btns.forEach(b=>b.classList.remove('active'));
+  if(!isOpen){
+    t.classList.add('show');
+    btn.classList.add('active');
+    setTimeout(()=>t.scrollIntoView({behavior:'smooth',block:'nearest'}),60);
+  }
+}
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target)}});
+},{threshold:.1});
+document.querySelectorAll('[data-r]').forEach(el=>obs.observe(el));
+</script>
+</body>
+</html>
