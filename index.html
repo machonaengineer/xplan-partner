@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>キャリリンクパートナー｜人材・求人広告・不動産・生活商材の紹介パートナー制度</title>
-  <meta name="description" content="キャリリンクパートナーは、人材紹介、求人広告、人事系ツール、不動産、光回線、ウォーターサーバーなどを紹介して成果報酬を受け取れる副業・代理店パートナー制度です。初期費用・月額費用・ノルマなし。" />
-  <meta property="og:title" content="キャリリンクパートナー｜紹介するだけで成果報酬" />
-  <meta property="og:description" content="人と企業をつなぐ、副業パートナー制度。求人広告・人材紹介・不動産・生活商材まで、あなたの人脈を収益化。" />
+  <title>キャリリンクパートナー｜2ティア紹介から始める副業パートナー制度</title>
+  <meta name="description" content="キャリリンクパートナーは、不動産・人材紹介・生活商材・副業紹介を中心に、周りの相談したい人を担当者へつなぐ副業パートナー制度です。LINEで「副業希望」と送って開始相談できます。" />
+  <meta property="og:title" content="キャリリンクパートナー｜人脈が、そのまま収益になる。" />
+  <meta property="og:description" content="不動産・人材紹介・生活商材・副業紹介を中心に、紹介者も紹介できる2ティア型の副業パートナー制度。" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://machonaengineer.github.io/xplan-partner/" />
   <meta name="theme-color" content="#0f172a" />
@@ -173,6 +173,20 @@
     .reward-row .big { font-size: 26px; font-weight: 950; color: var(--gold2); line-height: 1.2; }
     .pill-wrap { display: flex; flex-wrap: wrap; gap: 10px; }
     .pill { border: 1px solid var(--line); background: rgba(255,255,255,.07); border-radius: 999px; padding: 9px 12px; color: var(--muted); font-weight: 700; font-size: 13px; }
+    .signal-list { display: grid; gap: 10px; margin: 18px 0 0; }
+    .signal {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 11px 13px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--muted);
+      font-weight: 800;
+    }
+    .signal span:last-child { color: var(--gold2); font-size: 13px; }
     .focus {
       border-radius: 32px;
       padding: 28px;
@@ -190,7 +204,7 @@
     .category-card { position: relative; overflow: hidden; }
     .category-card .amount { color: var(--gold2); font-size: 24px; font-weight: 950; margin: 12px 0 8px; }
     .category-card .small { color: var(--soft); font-size: 13px; }
-    .steps { counter-reset: step; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .steps { counter-reset: step; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
     .step { position: relative; }
     .step::before {
       counter-increment: step;
@@ -252,11 +266,11 @@
         <span>キャリリンクパートナー</span>
       </a>
       <nav class="nav-links" aria-label="主要ナビゲーション">
-        <a href="#rewards">報酬例</a>
-        <a href="#hr">求人広告</a>
         <a href="#categories">カテゴリ</a>
+        <a href="#tier">2ティア</a>
         <a href="#flow">始め方</a>
-        <a class="btn btn-primary" href="https://line.me/R/ti/p/@fudo39" target="_blank" rel="noopener">LINE登録</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで副業希望と送る</a>
       </nav>
     </div>
   </header>
@@ -265,26 +279,26 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <div class="eyebrow">副業・代理店パートナー募集｜初期費用0円</div>
-          <h1>人と企業をつなぐだけで、<br><span class="gradient-text">成果報酬が生まれる。</span></h1>
-          <p class="lead">キャリリンクパートナーは、人材紹介・求人広告・人事系ツール・不動産・光回線・生活商材などを、あなたの人脈やSNSから紹介できる成果報酬型パートナー制度です。</p>
+          <div class="eyebrow">2ティア紹介パートナー募集｜個人向けLINE受付</div>
+          <h1>人脈が、<br><span class="gradient-text">そのまま収益になる。</span></h1>
+          <p class="lead">転職したい人。引越したい人。副業を始めたい人。不動産を探している人。人材を探している企業。あなたの周りの「相談したい人」をつなぐだけ。キャリリンクパートナーは、紹介から始められる副業パートナー制度です。</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="https://line.me/R/ti/p/@fudo39" target="_blank" rel="noopener">無料でLINE登録する</a>
-            <a class="btn btn-secondary" href="#rewards">報酬例を見る</a>
+            <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで副業希望と送る</a>
+            <a class="btn btn-secondary" href="#tier">2ティア制度を見る</a>
           </div>
-          <p class="note">登録料・月額費用・ノルマなし。報酬は成約・入金確認後に条件に応じて発生します。</p>
+          <p class="note">報酬条件は案件ごとに確認します。成果や報酬の発生を保証するものではありません。</p>
         </div>
-        <aside class="hero-card" aria-label="代表的な報酬例">
+        <aside class="hero-card" aria-label="2ティア拡大の概要">
           <div class="reward-main">
-            <div class="reward-label">高単価カテゴリの代表例</div>
-            <div class="reward-number">約70万円</div>
-            <p class="reward-caption">人材紹介：年収400万円 × 紹介手数料35% × 報酬率50% の例。実際の条件は案件ごとに変動します。</p>
+            <div class="reward-label">今年の拡大目標</div>
+            <div class="reward-number">1000人</div>
+            <p class="reward-caption">副業希望者・紹介者・個人パートナーをLINEに集め、担当者接続から活動開始までを管理します。</p>
           </div>
           <div class="mini-grid">
-            <div class="mini"><strong>0円</strong><span>初期費用・月額費用</span></div>
-            <div class="mini"><strong>5〜20%</strong><span>求人広告の入金額還元</span></div>
-            <div class="mini"><strong>37,000円〜</strong><span>光回線案件の報酬例</span></div>
-            <div class="mini"><strong>2tier</strong><span>紹介パートナー報酬</span></div>
+            <div class="mini"><strong>月143人</strong><span>目標達成に必要な月間ペース</span></div>
+            <div class="mini"><strong>週33人</strong><span>目標達成に必要な週間ペース</span></div>
+            <div class="mini"><strong>1日5人</strong><span>目標達成に必要な日次ペース</span></div>
+            <div class="mini"><strong>2tier</strong><span>紹介者の紹介も対象候補</span></div>
           </div>
         </aside>
       </div>
@@ -295,61 +309,15 @@
         <div class="section-head">
           <div>
             <div class="kicker">Why Career Link Partner</div>
-            <h2>副業初心者でも始めやすい<br>紹介型モデル。</h2>
+            <h2>営業ではなく、<br>相談相手をつなぐモデル。</h2>
           </div>
-          <p class="section-desc">営業経験がなくても、身近な「転職したい人」「採用したい企業」「引越ししたい人」「固定費を下げたい人」を専門担当へつなげばスタートできます。</p>
+          <p class="section-desc">個人のLINE流入から、担当者接続、面談、活動開始、案件紹介までをシンプルに進めます。法人向けメール導線ではなく、LINEでの個別案内を入口にしています。</p>
         </div>
         <div class="grid-4">
-          <article class="card"><div class="icon">0</div><h3>初期費用ゼロ</h3><p>登録料・月額費用・年会費は不要。商材の仕入れや在庫もありません。</p></article>
-          <article class="card"><div class="icon">自</div><h3>自分のペース</h3><p>ノルマなし。SNS、LINE、リアルの知人紹介など、得意な動き方で進められます。</p></article>
-          <article class="card"><div class="icon">資</div><h3>資料・台本あり</h3><p>提案資料、ヒアリング項目、送信用テンプレートを整備。紹介後は担当者が引き継ぎます。</p></article>
-          <article class="card"><div class="icon">続</div><h3>継続報酬も狙える</h3><p>求人広告、人事系ツール、インフラ商材など、継続・横展開しやすい案件があります。</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="rewards">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="kicker">Reward</div>
-            <h2>1件で数万円〜数十万円。<br>高単価案件を前面化。</h2>
-          </div>
-          <p class="section-desc">報酬条件は案件・商材・入金状況により変動します。下記はLP上で訴求しやすい代表例です。</p>
-        </div>
-        <div class="reward-list">
-          <div class="reward-row"><div><div class="tag">人材紹介</div><strong>転職希望者・採用企業の紹介</strong></div><div class="big">手数料の50%</div><div class="note">年収400万円×紹介手数料35%×50%で約70万円の例。</div></div>
-          <div class="reward-row"><div><div class="tag">求人広告・人事系ツール</div><strong>求人媒体、ATS、LINE採用、AI面接、RPO</strong></div><div class="big">入金額の5〜20%</div><div class="note">求人広告の見直し、応募単価改善、採用DXの提案に最適。</div></div>
-          <div class="reward-row"><div><div class="tag">不動産</div><strong>賃貸・売買・引越し関連</strong></div><div class="big">家賃40%〜</div><div class="note">紹介のみでも対応可能。引越し・回線・電気ガスへ横展開。</div></div>
-          <div class="reward-row"><div><div class="tag">生活インフラ</div><strong>光回線・電気・ガス・ウォーターサーバー</strong></div><div class="big">1件数千円〜5万円</div><div class="note">日常会話から提案しやすく、自己利用・家族紹介にも向くカテゴリ。</div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="hr">
-      <div class="wrap">
-        <div class="focus">
-          <div class="focus-grid">
-            <div>
-              <div class="kicker">Main Focus</div>
-              <h2>求人広告・人事系ツールを<br>最重要カテゴリに。</h2>
-              <p class="section-desc">法人単価が高く、採用課題が明確で、今後の問い合わせ営業・診断LPと接続しやすい領域です。人事担当者、経営者、採用支援フリーランスとの相性が特に高いです。</p>
-              <div class="hero-actions">
-                <a class="btn btn-primary" href="https://line.me/R/ti/p/@fudo39" target="_blank" rel="noopener">求人広告カテゴリで相談する</a>
-                <a class="btn btn-secondary" href="#categories">他カテゴリも見る</a>
-              </div>
-            </div>
-            <div class="card">
-              <h3>提案できる採用商材</h3>
-              <div class="checks">
-                <div class="check"><span><b>求人広告</b>：中途、新卒、アルバイト、地方媒体、検索系媒体</span></div>
-                <div class="check"><span><b>採用RPO</b>：応募者対応、スカウト運用、面接設定、採用代行</span></div>
-                <div class="check"><span><b>採用DX</b>：ATS、LINE採用、面接自動設定、AI面接、適性診断</span></div>
-                <div class="check"><span><b>採用制作</b>：採用サイト、採用動画、SNS運用、採用ピッチ資料</span></div>
-                <div class="check"><span><b>人材開発</b>：研修、eラーニング、タレントマネジメント、定着支援</span></div>
-              </div>
-            </div>
-          </div>
+          <article class="card"><div class="icon">人</div><h3>人脈を活かせる</h3><p>友人、知人、SNSのつながりから、相談したい人を担当者へつなぎます。</p></article>
+          <article class="card"><div class="icon">個</div><h3>個人LINE導線</h3><p>入口はLINEで「副業希望」と送るだけ。副業希望者や紹介者を受け付けます。</p></article>
+          <article class="card"><div class="icon">担</div><h3>担当者が接続</h3><p>運営側が担当者へつなぎ、面談で得意領域や紹介しやすい案件を確認します。</p></article>
+          <article class="card"><div class="icon">条</div><h3>条件は案件ごと</h3><p>報酬条件、承認条件、支払い条件は案件ごとに担当者面談で確認します。</p></article>
         </div>
       </div>
     </section>
@@ -359,20 +327,51 @@
         <div class="section-head">
           <div>
             <div class="kicker">Categories</div>
-            <h2>人脈に合わせて選べる<br>11カテゴリ以上。</h2>
+            <h2>紹介できるもの。</h2>
           </div>
-          <p class="section-desc">最初は得意領域1つで十分です。反応が良いカテゴリだけ伸ばし、成果が出たら横展開します。</p>
+          <p class="section-desc">不動産・人材紹介・生活商材・副業紹介を中心に、周りの相談内容に合わせて担当者へつなぎます。</p>
         </div>
         <div class="grid-3">
-          <article class="card category-card"><h3>求人広告・人事系ツール</h3><div class="amount">入金額の5〜20%</div><p>求人媒体、ATS、AI面接、採用RPO、LINE採用、採用ブランディング。</p></article>
-          <article class="card category-card"><h3>人材紹介</h3><div class="amount">紹介手数料の50%</div><p>転職希望者、採用企業、エンジニア、営業、人事、専門職の紹介。</p></article>
-          <article class="card category-card"><h3>不動産</h3><div class="amount">家賃40%〜</div><p>賃貸、売買、引越し、初期費用相談、光回線や電気ガス連携。</p></article>
-          <article class="card category-card"><h3>補助金・記帳代行</h3><div class="amount">利益の50% / 月額10%</div><p>経営者、個人事業主、起業準備中の人を紹介しやすいカテゴリ。</p></article>
-          <article class="card category-card"><h3>美容・シェアサロン</h3><div class="amount">最大30万円/件</div><p>美容師、ネイリスト、施術者、FCオーナー、顧客紹介に対応。</p></article>
-          <article class="card category-card"><h3>光回線・生活インフラ</h3><div class="amount">37,000円〜/件</div><p>光回線、電気、ガス、ウォーターサーバーなど日常会話から提案可能。</p></article>
-          <article class="card category-card"><h3>飲食・イベントスペース</h3><div class="amount">利用額の10%</div><p>飲食店、貸切スペース、イベント、会食、紹介顧客の送客。</p></article>
-          <article class="card category-card"><h3>クリエイティブ・SNS</h3><div class="amount">利益の30%</div><p>LP、ロゴ、バナー、動画編集、SNS運用代行、採用制作物。</p></article>
-          <article class="card category-card"><h3>婚活・保険</h3><div class="amount">10万円〜/件</div><p>結婚相談、ライフプラン、保険見直しなど生活課題に接続。</p></article>
+          <article class="card category-card"><h3>不動産賃貸</h3><div class="amount">条件は案件ごとに確認</div><p>引越し予定者、部屋探し中の友人、住み替え相談を担当者へ接続。</p></article>
+          <article class="card category-card"><h3>不動産売買</h3><div class="amount">条件は案件ごとに確認</div><p>購入・売却・投資用物件など、不動産の相談先を探している人を紹介。</p></article>
+          <article class="card category-card"><h3>転職希望者</h3><div class="amount">条件は案件ごとに確認</div><p>転職を考えている人、キャリア相談したい人を人材担当者へつなぎます。</p></article>
+          <article class="card category-card"><h3>人材紹介</h3><div class="amount">条件は案件ごとに確認</div><p>採用したい企業、人を探している経営者、人材ニーズのある知人企業を紹介。</p></article>
+          <article class="card category-card"><h3>副業希望者</h3><div class="amount">条件は案件ごとに確認</div><p>副業を始めたい人、紹介活動に興味がある人をLINE入口へ案内。</p></article>
+          <article class="card category-card"><h3>光回線</h3><div class="amount">条件は案件ごとに確認</div><p>引越し、固定費見直し、ネット回線の切り替え相談に対応。</p></article>
+          <article class="card category-card"><h3>電気ガス</h3><div class="amount">条件は案件ごとに確認</div><p>生活コストの見直し、引越し時のインフラ手配に合わせて紹介。</p></article>
+          <article class="card category-card"><h3>ウォーターサーバー</h3><div class="amount">条件は案件ごとに確認</div><p>家庭、オフィス、美容サロンなどの生活商材ニーズを接続。</p></article>
+          <article class="card category-card"><h3>美容</h3><div class="amount">条件は案件ごとに確認</div><p>美容サービス、サロン、人脈づくりと相性の良い相談を担当者へ。</p></article>
+          <article class="card category-card"><h3>婚活</h3><div class="amount">条件は案件ごとに確認</div><p>結婚相談、出会い、ライフイベント関連の相談者を紹介。</p></article>
+          <article class="card category-card"><h3>保険</h3><div class="amount">条件は案件ごとに確認</div><p>ライフプランや保障見直しを相談したい人を専門担当へ接続。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tier">
+      <div class="wrap">
+        <div class="focus">
+          <div class="focus-grid">
+            <div>
+              <div class="kicker">2 Tier System</div>
+              <h2>直接紹介だけでなく、<br>紹介者も紹介できる。</h2>
+              <p class="section-desc">キャリリンクパートナーでは、自分が直接相談者を紹介するだけでなく、紹介活動をする人を紹介することもできます。紹介者が活動開始し、その先で成果が発生した場合、条件に応じて報酬対象になる可能性があります。</p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで副業希望と送る</a>
+                <a class="btn btn-secondary" href="#flow">始め方を見る</a>
+              </div>
+              <p class="note">2ティアの詳細条件は担当者面談で確認します。</p>
+            </div>
+            <div class="card">
+              <h3>2ティアの基本イメージ</h3>
+              <div class="checks">
+                <div class="check"><span><b>直接紹介</b>：自分の周りの相談者を担当者へつなぐ</span></div>
+                <div class="check"><span><b>紹介者紹介</b>：紹介活動に向いている人を運営側へつなぐ</span></div>
+                <div class="check"><span><b>活動開始</b>：紹介者が担当者面談を経て活動を始める</span></div>
+                <div class="check"><span><b>成果発生時</b>：案件条件に応じて報酬対象になる可能性がある</span></div>
+                <div class="check"><span><b>条件確認</b>：カテゴリ別の条件は面談時に確認</span></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -382,20 +381,17 @@
         <div class="section-head">
           <div>
             <div class="kicker">Best Partner</div>
-            <h2>特に相性が良い人。</h2>
+            <h2>向いている人。</h2>
           </div>
+          <p class="section-desc">営業経験よりも、人に相談されやすいこと、必要な人を必要な担当者につなげられることを重視します。</p>
         </div>
-        <div class="grid-2">
-          <div class="card">
-            <h3>法人・採用まわりに強い人</h3>
-            <p>人事担当者、経営者、採用代行、採用コンサル、RPO、求人広告営業、フリーランス人事、SES営業、HR領域の知人がいる人。</p>
-            <div class="pill-wrap" style="margin-top:16px;"><span class="pill">求人広告</span><span class="pill">ATS</span><span class="pill">AI面接</span><span class="pill">RPO</span><span class="pill">人材紹介</span></div>
-          </div>
-          <div class="card">
-            <h3>生活・副業ニーズに強い人</h3>
-            <p>引越し予定者、副業したい人、転職したい人、美容・飲食・イベント人脈、固定費を下げたい人と日常的に接点がある人。</p>
-            <div class="pill-wrap" style="margin-top:16px;"><span class="pill">不動産</span><span class="pill">光回線</span><span class="pill">美容</span><span class="pill">副業</span><span class="pill">婚活</span></div>
-          </div>
+        <div class="grid-3">
+          <article class="card"><div class="icon">脈</div><h3>人脈が多い人</h3><p>友人、知人、仕事関係、地域コミュニティなど、人との接点が多い人。</p></article>
+          <article class="card"><div class="icon">SNS</div><h3>SNSをやっている人</h3><p>日常投稿やストーリーズから、相談者や紹介者と接点を作れる人。</p></article>
+          <article class="card"><div class="icon">相</div><h3>相談されやすい人</h3><p>転職、引越し、副業、生活費、人間関係などを友達から相談される人。</p></article>
+          <article class="card"><div class="icon">業</div><h3>関連業界の人</h3><p>不動産、転職、副業、美容、営業、人材業界に関わりがある人。</p></article>
+          <article class="card"><div class="icon">接</div><h3>人をつなぐのが得意な人</h3><p>営業は苦手でも、必要な相手同士を紹介することが得意な人。</p></article>
+          <article class="card"><div class="icon">拡</div><h3>紹介者を増やせる人</h3><p>自分だけでなく、周りの紹介者候補を見つけてLINEへ案内できる人。</p></article>
         </div>
       </div>
     </section>
@@ -405,13 +401,38 @@
         <div class="section-head">
           <div>
             <div class="kicker">Start</div>
-            <h2>最短当日スタート。<br>やることは3つだけ。</h2>
+            <h2>始め方。</h2>
           </div>
+          <p class="section-desc">LINEで「副業希望」と送ってから、担当者面談を経て活動開始します。紹介できるカテゴリや報酬条件は面談で確認します。</p>
         </div>
         <div class="steps">
-          <article class="card step"><h3>LINE登録</h3><p>LINE ID「fudo39」またはボタンから登録し、「副業希望」と送ってください。</p></article>
-          <article class="card step"><h3>得意カテゴリを選ぶ</h3><p>経験、人脈、SNS、営業しやすい相手を整理し、最初に狙うカテゴリを決めます。</p></article>
-          <article class="card step"><h3>紹介して報酬化</h3><p>資料・テンプレートを使って案内。興味ありの人・企業を担当者へつなぎます。</p></article>
+          <article class="card step"><h3>LINEで今井に連絡</h3><p>ボタンからLINEを開き、「副業希望」と送ってください。</p></article>
+          <article class="card step"><h3>今井が担当者につなぐ</h3><p>希望や得意領域を確認し、運営側が担当者へ接続します。</p></article>
+          <article class="card step"><h3>担当者と面談</h3><p>紹介カテゴリ、進め方、報酬条件、注意事項を確認します。</p></article>
+          <article class="card step"><h3>活動開始</h3><p>SNS、LINE、知人紹介など、自分に合う方法で紹介活動を始めます。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="grid-2">
+          <div class="card">
+            <div class="kicker">Flow</div>
+            <h2>2ティアの流れ。</h2>
+            <div class="signal-list" aria-label="2ティアの流れ">
+              <div class="signal"><span>LINEで「副業希望」と送る</span><span>01</span></div>
+              <div class="signal"><span>運営側が担当者に接続</span><span>02</span></div>
+              <div class="signal"><span>担当者と面談</span><span>03</span></div>
+              <div class="signal"><span>活動開始</span><span>04</span></div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="kicker">Reward Policy</div>
+            <h2>報酬条件について。</h2>
+            <p>報酬は、案件カテゴリ、紹介先の状況、成約・入金・承認条件により変わります。LP上では金額を断定せず、詳細は担当者面談で個別に確認します。</p>
+            <div class="pill-wrap" style="margin-top:16px;"><span class="pill">案件ごとに確認</span><span class="pill">承認条件あり</span><span class="pill">保証表現なし</span></div>
+          </div>
         </div>
       </div>
     </section>
@@ -421,12 +442,12 @@
         <div class="cta">
           <div class="kicker">Call To Action</div>
           <h2>まずは「副業希望」と<br>LINEで送ってください。</h2>
-          <p class="section-desc" style="margin-left:auto;margin-right:auto;">自分に合うカテゴリ、紹介しやすい商材、報酬条件、始め方を個別に案内します。登録だけなら費用はかかりません。</p>
+          <p class="section-desc" style="margin-left:auto;margin-right:auto;">不動産、人材紹介、生活商材、副業紹介、2ティア制度の中から、自分に合う始め方を担当者面談で確認できます。</p>
           <div class="hero-actions" style="justify-content:center;">
-            <a class="btn btn-primary" href="https://line.me/R/ti/p/@fudo39" target="_blank" rel="noopener">LINEで無料相談する</a>
+            <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで副業希望と送る</a>
             <a class="btn btn-secondary" href="#faq">不安点を確認する</a>
           </div>
-          <p class="note">LINE ID：fudo39 ／ 送信文言：「副業希望」</p>
+          <p class="note">送信文言：「副業希望」／ 報酬条件は案件ごとに確認します。</p>
         </div>
       </div>
     </section>
@@ -440,18 +461,20 @@
           </div>
         </div>
         <div class="faq">
-          <details><summary>本当に費用はかかりませんか？</summary><p>登録料・月額費用・年会費は不要です。成果報酬型のため、商材の仕入れや在庫もありません。</p></details>
-          <details><summary>営業経験がなくてもできますか？</summary><p>可能です。紹介後の詳細説明や条件確認は担当者が行います。まずは「興味がありそうな人をつなぐ」動きから始められます。</p></details>
-          <details><summary>報酬はいつ発生しますか？</summary><p>原則として、紹介先の成約・入金確認後、案件ごとの条件に沿って発生します。商材により支払い条件・承認条件は異なります。</p></details>
-          <details><summary>求人広告カテゴリは誰に紹介すればよいですか？</summary><p>求人広告費を使っている企業、採用に困っている経営者、人事担当者、採用代行・採用コンサル・RPO関係者と相性が高いです。</p></details>
-          <details><summary>広告・PR表記は必要ですか？</summary><p>SNSやWebで紹介する場合は、広告・PR・紹介であることが分かる表記を推奨します。誤認を招く表現、成果保証、断定的な表現は避けてください。</p></details>
+          <details><summary>費用はかかりますか？</summary><p>登録料や月額費用は基本的にかかりません。必要な条件や注意事項は担当者面談で確認します。</p></details>
+          <details><summary>営業未経験でもできますか？</summary><p>営業経験がなくても、人をつなぐことが得意な人は参加を検討できます。実際の進め方は担当者と相談して決めます。</p></details>
+          <details><summary>2ティアとは何ですか？</summary><p>自分が直接相談者を紹介するだけでなく、紹介活動をする人を紹介できる仕組みです。紹介者が活動開始し、その先で成果が発生した場合、条件に応じて報酬対象になる可能性があります。</p></details>
+          <details><summary>報酬はいつ発生しますか？</summary><p>案件ごとの成約、入金、承認条件を満たした場合に報酬対象となります。発生条件や支払い時期は案件ごとに確認します。</p></details>
+          <details><summary>何を紹介すればいいですか？</summary><p>不動産賃貸・売買、転職希望者、人材紹介、副業希望者、光回線、電気ガス、ウォーターサーバー、美容、婚活、保険などが対象候補です。</p></details>
+          <details><summary>担当者面談では何を話しますか？</summary><p>得意領域、紹介できそうな人脈、活動方法、案件カテゴリ、報酬条件、NG表現や注意事項を確認します。</p></details>
+          <details><summary>ノルマはありますか？</summary><p>一律のノルマを前提にした案内ではありません。活動量や紹介方法は、担当者と相談しながら無理のない形で決めます。</p></details>
         </div>
       </div>
     </section>
   </main>
 
   <div class="fixed-cta">
-    <a class="btn btn-primary" href="https://line.me/R/ti/p/@fudo39" target="_blank" rel="noopener">LINEで無料登録する</a>
+    <a class="btn btn-primary" href="https://line.me/ti/p/RcaLvLMD37" target="_blank" rel="noopener">LINEで副業希望と送る</a>
   </div>
 
   <footer>
